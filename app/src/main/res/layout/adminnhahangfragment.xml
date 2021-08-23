@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rcTop"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgTileNhaHang"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/nhahang1" />
+
+        <ImageView
+            android:id="@+id/NhIconAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/addnhahang" />
+
+        <ImageView
+            android:id="@+id/NhIconSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NhIconAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/updatedata" />
+
+        <ImageView
+            android:id="@+id/NhIiconXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NhIconSua"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtTiTleAdd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/NhIconAdd"
+            android:layout_toRightOf="@+id/imgTileNhaHang"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm Nhà hàng Mới Liên Kết"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTiTleAdd"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/NhIconSua"
+            android:layout_toRightOf="@+id/imgTileNhaHang"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thay Đổi Thông Tin Nhà Hàng"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtXemChiTietNhaHang"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTileUpdate"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_toLeftOf="@+id/NhIiconXoa"
+            android:layout_toRightOf="@+id/imgTileNhaHang"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Xem Chi Tiết Nhà hàng"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:id="@+id/txtTileNhaHangTieuBieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rcTop"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Nhà Hàng Tiêu Biểu"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:id="@+id/rcTopTieuBieu"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@+id/txtTileNhaHangTieuBieu"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgTileNhaHang1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/nhahang2" />
+
+        <ImageView
+            android:id="@+id/NhTbIconAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/addnhahang" />
+
+        <ImageView
+            android:id="@+id/NhTbIconSua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NhTbIconAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/updatedata" />
+
+        <ImageView
+            android:id="@+id/NhTbIconXoa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/NhTbIconSua"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtTiTleAdd1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/NhTbIconAdd"
+            android:layout_toRightOf="@+id/imgTileNhaHang1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm Nhà hàng Tiêu Biểu"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileUpdate1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTiTleAdd1"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/NhTbIconAdd"
+            android:layout_toRightOf="@+id/imgTileNhaHang1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thay Đổi Thông Tin Nhà Hàng"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTiTleDeleTe1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTileUpdate1"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+
+            android:layout_toLeftOf="@+id/NhTbIconAdd"
+            android:layout_toRightOf="@+id/imgTileNhaHang1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Xem Chi tiết nhà hàng tiêu biểu"
+            android:textAlignment="center" />
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

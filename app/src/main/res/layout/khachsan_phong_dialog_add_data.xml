@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtTileHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Thêm Thông Tin Phòng Khách Sạn"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txtTileNameKhachSan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileHeader"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Loại Phòng"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtUpdateMaChuyenBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileHeader"
+        android:layout_toRightOf="@+id/txtTile2"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Loại Phòng"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileNameKhachSan"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Giá gốc phòng"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddGiaGocPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateMaChuyenBay"
+        android:layout_toRightOf="@+id/txtTile2"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Giá Gốc phòng"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/txtTile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Số Phòng"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddSoPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddGiaGocPhong"
+        android:layout_toRightOf="@+id/txtTile2"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Giá Gốc phòng"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile1"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Số Lương phòng"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddSoLuongPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddSoPhong"
+        android:layout_toRightOf="@+id/txtTile2"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Số lượng phòng"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile2"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Giảm Giá"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddGiamGiaPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddSoLuongPhong"
+        android:layout_toRightOf="@+id/txtTile2"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Giảm Giá"
+        android:textSize="18sp" />
+    <TextView
+        android:id="@+id/txtTile4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile3"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Giá cuối"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddGiaPhong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddGiamGiaPhong"
+        android:layout_toRightOf="@+id/txtTile2"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Giá Cuối "
+        android:textSize="18sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancelDialogAddPhongKhachSan"
+        android:textSize="24sp"
+        android:text="Cancel"
+        android:layout_below="@+id/txtTile4"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddDataDiaLogKhachSan"
+        android:textSize="24sp"
+        android:text="Add Data"
+        android:layout_below="@+id/txtTile4"
+       android:layout_alignParentRight="true"
+       android:layout_marginTop="5dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:id="@+id/txtTileHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:text="Thêm Thông Tin Món Ăn"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileHeader"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Tên Món Ăn"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddNameMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileHeader"
+        android:layout_toRightOf="@+id/txt1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Nhập Tên Món Ăn"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt1"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Giá Món Ăn"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddGiaMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddNameMonAn"
+        android:layout_toRightOf="@+id/txt1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Giá Món Ăn"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile2"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nhóm Món"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddNhomMonAn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddGiaMonAn"
+        android:layout_toRightOf="@+id/txt1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Nhóm Món"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCancelDialogAdMonAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddNhomMonAn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:text="Cancel"
+        android:textSize="24sp"
+
+        />
+
+    <Button
+        android:id="@+id/btnAddDataDiaLogMonAn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddNhomMonAn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10dp"
+        android:text="Add Data"
+        android:textSize="24sp"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+    <!-- DN viết tắc cho từ doanh nghiệp khách sạn nhà hàng các công ty du lịch-->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <ImageView
+                android:id="@+id/imgAddDN"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/logo1" />
+            <!-- Tên doanh nghiep-->
+            <TextView
+                android:id="@+id/txtNameDNLike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/imgAddDN"
+                android:fontFamily="sans-serif-black"
+                android:textSize="24sp" />
+            <!-- Location doanh nghiep-->
+            <TextView
+                android:id="@+id/txtLocaitonDN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtNameDNLike"
+                android:layout_toRightOf="@id/imgAddDN"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20sp" />
+            <!-- Đánh giá  doanh nghiep (sao)-->
+            <TextView
+                android:id="@+id/txtDanhGiaDN"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLocaitonDN"
+                android:layout_toRightOf="@id/imgAddDN"
+                android:fontFamily="sans-serif-black"
+                android:textSize="20sp" />
+            <!--  doanh nghiep giới thiệu-->
+            <TextView
+                android:id="@+id/txtPrDN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/txtDanhGiaDN"
+                android:layout_toRightOf="@id/imgAddDN" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

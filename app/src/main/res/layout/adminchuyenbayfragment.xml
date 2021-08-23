@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rcTop"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgTileChuyenbay"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/chuyenbay" />
+
+        <ImageView
+            android:id="@+id/CbAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/addnhahang" />
+
+        <ImageView
+            android:id="@+id/CbUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CbAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/updatedata" />
+
+        <ImageView
+            android:id="@+id/CbDeleTe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/CbUpdate"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtTiTleAdd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/CbAdd"
+            android:layout_toRightOf="@+id/imgTileChuyenbay"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm Chuyến bay "
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTiTleAdd"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/CbUpdate"
+            android:layout_toRightOf="@+id/imgTileChuyenbay"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Đổi thông tin chuyến bay"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtXemChiTietFragmentChuyenBay"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTileUpdate"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/CbDeleTe"
+            android:layout_toRightOf="@+id/imgTileChuyenbay"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Xem Chi tiết "
+            android:textAlignment="center"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rcTop"
+        android:id="@+id/rcBot"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgTiTleHs"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/historychuyenbay" />
+
+        <ImageView
+            android:id="@+id/iconOpenDialogAddUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_baseline_add_24" />
+
+        <ImageView
+            android:id="@+id/addAdmin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iconOpenDialogAddUser"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic__add" />
+
+        <ImageView
+            android:id="@+id/CbHsDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addAdmin"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtTiTleAddM"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/iconOpenDialogAddUser"
+            android:layout_toRightOf="@+id/imgTiTleHs"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm nguoi dung"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileUpdateM"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTiTleAddM"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/addAdmin"
+            android:layout_toRightOf="@+id/imgTiTleHs"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm Admin"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTiTleDeleTeM"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTileUpdateM"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/CbHsDelete"
+            android:layout_toRightOf="@+id/imgTiTleHs"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Xóa history"
+            android:textAlignment="center"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

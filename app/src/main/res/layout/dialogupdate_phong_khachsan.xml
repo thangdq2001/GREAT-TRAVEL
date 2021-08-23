@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Giá gốc"
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt2"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Giá phòng"
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt3"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Giảm giá"
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Loại"
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt5"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Số lượng"
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt6"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Số Phòng"
+        />
+    <EditText
+        android:hint="Giá gốc"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtUpdateGiaGocPhong"
+
+        />
+    <EditText
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateGiaGocPhong"
+        android:id="@+id/edtUpdateGiaPhong"
+        android:hint="Giá phòng"
+        />
+    <EditText
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateGiaPhong"
+        android:id="@+id/edtUpdategiamGiaPhong"
+        android:hint="Giảm giá "
+        />
+    <EditText
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdategiamGiaPhong"
+        android:id="@+id/edtUpdateLoaiPhong"
+        android:hint="Loại phòng"
+        />
+    <EditText
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateLoaiPhong"
+        android:id="@+id/edtUpdateSoLuong"
+        android:hint="Số Lượng"
+        />
+    <EditText
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateSoLuong"
+        android:id="@+id/edtUpdateSoPhong"
+        android:hint="Số Phòng"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancelDiaLogUpdatePhong"
+        android:text="Cancel"
+        android:layout_below="@+id/edtUpdateSoPhong"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdateDialogPhong"
+        android:text="Update"
+        android:layout_below="@+id/edtUpdateSoPhong"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        />
+</RelativeLayout>

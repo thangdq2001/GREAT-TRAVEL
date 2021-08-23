@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/txtTileNameKhachSan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Tên Khách Sạn"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddNameKhachSan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Nhập Tên Khách Sạn"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileNameKhachSan"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Lat khách sạn"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddLatKhachSan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddNameKhachSan"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Nhập Lat Khách Sạn"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile1"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Log khách sạn"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddLogKhachSan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddLatKhachSan"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Nhập Log Khách Sạn"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile2"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Khu Vực"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtAddKhuVucKhachSan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddLogKhachSan"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Khu Vực "
+        android:textSize="18sp" />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/khacSanDialogCancel"
+        android:textSize="24sp"
+        android:text="Hủy"
+        android:layout_below="@+id/edtAddKhuVucKhachSan"
+        android:layout_alignParentLeft="true"
+
+        />
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/khachSanDiaLogAddData"
+        android:textSize="24sp"
+        android:text="Hoàn Thành"
+        android:layout_below="@+id/edtAddKhuVucKhachSan"
+        android:layout_alignParentRight="true"
+
+        />
+
+</RelativeLayout>

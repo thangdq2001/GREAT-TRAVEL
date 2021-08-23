@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edtBayDi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/backgouedt1"
+        android:gravity="center"
+        android:hint="Bay từ"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/imgChangeInfoMationText"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/edtBayDi"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/iconchangetext" />
+
+    <EditText
+        android:id="@+id/edtBayDen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgChangeInfoMationText"
+        android:layout_margin="10dp"
+        android:background="@drawable/iconviitri1"
+        android:gravity="center"
+        android:hint="Bay đến"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <RelativeLayout
+        android:id="@+id/rcTimeOder"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_below="@+id/edtBayDen"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtTileNgayDi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ngày đi"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/txtNgaDiChuyenbay1chieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTileNgayDi"
+            android:layout_marginLeft="50dp"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="22"
+            android:textColor="#00FFFF"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/txtThuChuyenBay1Chieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTileNgayDi"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txtNgaDiChuyenbay1chieu"
+            android:hint="CN"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/txtThangChuyenBay1Chieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtThuChuyenBay1Chieu"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txtNgaDiChuyenbay1chieu"
+            android:hint="tg 11"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imgTileNext"
+            android:layout_width="wrap_content"
+            android:layout_height="90dp"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@+id/txtThangChuyenBay1Chieu"
+            android:src="@drawable/next" />
+
+        <TextView
+            android:id="@+id/txtTileHaCanh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/imgTileNext"
+            android:text="Hạ Cánh"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtNgayDenChuyenBay1Chieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTileHaCanh"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/imgTileNext"
+            android:fontFamily="sans-serif-condensed"
+            android:hint="22"
+            android:textColor="#00FFFF"
+            android:textSize="34sp" />
+
+        <TextView
+            android:id="@+id/txtGioHaCanhChuyenBay1Chieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTileHaCanh"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/txtNgayDenChuyenBay1Chieu"
+            android:hint="07:00 pm"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/txtThangHaCanhChuyenBay1Chieu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtGioHaCanhChuyenBay1Chieu"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/txtNgayDenChuyenBay1Chieu"
+            android:hint="tg 11"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rcCheckOder"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/rcTimeOder"
+        >
+        <Spinner
+            android:id="@+id/spnerOptionAmountKhach"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+
+            />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

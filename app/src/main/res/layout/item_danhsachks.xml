@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+    <androidx.cardview.widget.CardView
+
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        tools:ignore="MissingConstraints">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="240dp">
+
+            <ImageView
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:src="@drawable/khachsan"
+                android:layout_height="48dp"/>
+            <TextView
+                android:layout_below="@+id/view"
+                android:id="@+id/txtNameKsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="Meraki hotel"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/saofun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNameKsFragment"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/sao_danhgia" />
+
+            <ImageView
+                android:id="@+id/saofun1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNameKsFragment"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/saofun"
+                android:src="@drawable/sao_danhgia" />
+            <ImageView
+                android:id="@+id/saofun2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNameKsFragment"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/saofun1"
+                android:src="@drawable/sao_danhgia" />
+
+            <ImageView
+                android:id="@+id/imgVitri"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/saofun"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/locaiton"
+
+                android:textSize="16sp" />
+
+            <TextView
+                android:padding="5dp"
+                android:scrollbarSize="18sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:id="@+id/txtVitri"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/saofun"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/imgVitri"
+                android:src="@drawable/iconviitri1"
+                android:text="Quận 1"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgVitri1"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/imgVitri"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:src="@drawable/like"
+                android:text="Quận 1"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="5dp"
+                android:id="@+id/txt1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txtVitri"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/imgVitri"
+                android:src="@drawable/iconviitri1"
+                android:text="Rất tốt"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/imgThetindung"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:layout_below="@+id/imgVitri1"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/visa_card"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:padding="5dp"
+                android:id="@+id/txt2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/txt1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="0dp"
+                android:layout_toRightOf="@+id/imgVitri"
+                android:text="Không cần thẻ tín dụng + Thang máy + 24/24"
+                android:textColor="#000000"
+                android:textSize="14sp" />
+            <Button
+               android:background="#0000FF"
+                android:layout_marginLeft="300dp"
+                android:id="@+id/btnChonKhachSan"
+                android:layout_width="100dp"
+                android:text="199.000 -> 999.000vnd"
+                android:layout_height="40dp"
+                android:layout_below="@+id/txt2"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

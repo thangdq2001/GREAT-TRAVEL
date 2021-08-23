@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/srollVIew"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@id/rcTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="20dp">
+
+            <ImageView
+                android:id="@+id/imgBackHome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/backthuexe" />
+
+            <ImageView
+                android:id="@+id/imgLocaiton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/imgBackHome"
+                android:src="@drawable/locaiton" />
+
+            <TextView
+                android:id="@+id/txtLocaitonKh"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/imgLocaiton"
+                android:hint="50 Vĩnh Viễn"
+                android:textColor="#000000"
+                android:textSize="24dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="52dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/custom_name_goixe"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:hint="Tìm nhà hàng, món ăn"
+                android:textAlignment="center" />
+
+
+        </RelativeLayout>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="#DDDDDD"
+            android:id="@+id/rcBody"
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:layout_below="@id/rcTop"
+            android:layout_marginBottom="10dp"
+            android:padding="10dp"
+            tools:listitem="@layout/custom_list_nhahangtieubieu">
+
+
+            <!--        <ScrollView-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content">-->
+
+            <!--            <RelativeLayout-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:orientation="vertical">-->
+
+
+            <!--                <ImageButton-->
+            <!--                    android:id="@+id/imgNhaHangTieuBieu1"-->
+            <!--                    android:layout_width="137dp"-->
+            <!--                    android:layout_height="124dp"-->
+            <!--                    android:layout_marginLeft="10dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:src="@drawable/monan1" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/txtNameNhaHangTieuBieu1"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="20dp"-->
+            <!--                    android:layout_marginLeft="12dp"-->
+            <!--                    android:layout_marginTop="140dp"-->
+            <!--                    android:hint="Bò né-3 Ngon"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <ImageButton-->
+            <!--                    android:id="@+id/imgNhaHangTieuBieu2"-->
+            <!--                    android:layout_width="137dp"-->
+            <!--                    android:layout_height="124dp"-->
+            <!--                    android:layout_marginLeft="160dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:src="@drawable/monan2" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/txtNameNhaHangTieuBieu2"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="20dp"-->
+            <!--                    android:layout_marginLeft="160dp"-->
+            <!--                    android:layout_marginTop="140dp"-->
+            <!--                    android:hint="Thịt ba roi-Quán Năm Tươi"-->
+            <!--                    android:textStyle="bold" />-->
+
+            <!--                <ImageButton-->
+            <!--                    android:id="@+id/imgNhaHangTieuBieu3"-->
+            <!--                    android:layout_width="137dp"-->
+            <!--                    android:layout_height="124dp"-->
+            <!--                    android:layout_marginLeft="310dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:src="@drawable/monan2" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/txtNameNhaHangTieuBieu3"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="20dp"-->
+            <!--                    android:layout_marginLeft="310dp"-->
+            <!--                    android:layout_marginTop="140dp"-->
+            <!--                    android:text="Chả Giò"-->
+            <!--                    android:textStyle="bold" />-->
+
+
+            <!--            </RelativeLayout>-->
+            <!--        </ScrollView>-->
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <RelativeLayout
+            android:id="@+id/addd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rcBody"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/txtTiTleTieuBieu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="Các nhà hàng tuyệt vời "
+                android:textSize="18sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recViewDanhSachNhaHangKhachHang"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/txtTiTleTieuBieu"
+                android:layout_margin="5dp"
+                android:background="@drawable/degsi_mrecyclerview_main"
+                tools:listitem="@layout/custom_nhahang_khachang" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.core.widget.NestedScrollView>

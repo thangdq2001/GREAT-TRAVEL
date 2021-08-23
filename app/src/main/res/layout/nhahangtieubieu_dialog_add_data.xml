@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTille1"
+        android:text="Thêm Thông Tin Nhà Hàng Tiêu Biểu"
+        android:layout_alignParentTop="true"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/txttiTleAddName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTille1"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Tên Nhà hàng"
+        android:textSize="24sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtAddNameNhaHangTieuBieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTille1"
+
+        android:layout_toRightOf="@+id/txtTiTleLogNhaHang"
+        android:hint="Name Nhà hàng"
+        android:textSize="16sp" />
+
+
+    <TextView
+        android:id="@+id/txtTiTleLogNhaHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttiTleAddName"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Log Nhà Hàng"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtAddLogNhaHangTieuBieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtAddNameNhaHangTieuBieu"
+
+        android:layout_toRightOf="@+id/txtTiTleLogNhaHang"
+        android:hint="Log Nhà hàng"
+        android:textSize="16sp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtTileLatNhaHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTiTleLogNhaHang"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Lat Nhà Hàng"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edtAddLatNhaHangTieuBieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Lat Nhà Hàng"
+        android:textSize="16sp"
+        android:layout_below="@+id/edtAddLogNhaHangTieuBieu"
+        android:layout_toRightOf="@+id/txtTiTleLogNhaHang"
+
+        />
+
+
+    <TextView
+        android:id="@+id/txtTileKhuVuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileLatNhaHang"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Khu Vực"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:id="@+id/edtAddKhuVucNhaHangTieuBieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Khu Vuc"
+        android:textSize="16sp"
+        android:layout_below="@+id/edtAddLatNhaHangTieuBieu"
+        android:layout_toRightOf="@+id/txtTiTleLogNhaHang"
+
+
+        />
+    <TextView
+        android:id="@+id/txtTiTLeNhomNhaHang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileKhuVuc"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nhóm Nhà Hàng"
+        android:textSize="24sp"
+        />
+    <EditText
+        android:id="@+id/edtAddNhomNhaHangTieuBieu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Lat Nhà Hàng"
+        android:textSize="16sp"
+        android:layout_below="@+id/edtAddKhuVucNhaHangTieuBieu"
+        android:layout_toRightOf="@+id/txtTiTleLogNhaHang"
+
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancelDialogAddNhaHangTieuBieu"
+        android:layout_below="@+id/txtTiTLeNhomNhaHang"
+        android:layout_marginTop="10dp"
+        android:text="Cancel"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="24sp"
+        />
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddDataDiaLogNhaHangTieuBieu"
+        android:layout_below="@+id/txtTiTLeNhomNhaHang"
+        android:layout_marginTop="10dp"
+        android:text="Add Data"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="24sp"
+        />
+
+</RelativeLayout>

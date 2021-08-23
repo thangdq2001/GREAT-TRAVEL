@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rcTop"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgTileNhaHang1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/khachsan" />
+\
+
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:id="@+id/KsAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/addnhahang" />
+
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:id="@+id/KsUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/KsAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/updatedata" />
+
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:id="@+id/KsDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/KsUpdate"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtTiTleAdd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/KsAdd"
+            android:layout_toRightOf="@+id/imgTileNhaHang1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm Khách sạn Mới Liên Kết"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTiTleAdd"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/NhIconSua"
+            android:layout_toRightOf="@+id/imgTileNhaHang1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thay Đổi Thông Tin Khách sạn"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTiTleDeleTe"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTileUpdate"
+            android:layout_margin="2dp"
+            android:layout_toLeftOf="@+id/NhIiconXoa"
+            android:layout_toRightOf="@+id/imgTileNhaHang1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Xóa Khách Sạn Hết Hợp Đồng"
+            android:textAlignment="center"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rcTop"
+        android:id="@+id/rcBot"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgTiTleKSPhong"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/room" />
+
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:id="@+id/KsPAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_baseline_add_24" />
+
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:id="@+id/KsPUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/KsPAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/updatedata" />
+
+        <ImageView
+            android:layout_marginLeft="2dp"
+            android:id="@+id/KsPdelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/KsPUpdate"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtTiTleAddM"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/KsPAdd"
+            android:layout_toRightOf="@+id/imgTiTleKSPhong"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm Phòng Mới Của Khách Sạn"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileUpdateM"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTiTleAddM"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/KsPUpdate"
+            android:layout_toRightOf="@+id/imgTiTleKSPhong"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thay Đổi Thông Tin Phòng"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileChiTietPhong"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTileUpdateM"
+            android:layout_margin="3dp"
+            android:layout_toLeftOf="@+id/KsPdelete"
+            android:layout_toRightOf="@+id/imgTiTleKSPhong"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Xem Chi tiết phòng"
+            android:textAlignment="center"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

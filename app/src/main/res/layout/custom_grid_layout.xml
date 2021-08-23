@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.cardview.widget.CardView
+        android:layout_margin="10dp"
+        app:cardCornerRadius="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mCardView"
+        android:foregroundGravity="center"
+
+        >
+        <LinearLayout
+            android:background="@drawable/custom_grid_layout_adapter"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp"
+            >
+            <ImageView
+
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:id="@+id/imgPr1"
+                android:src="@drawable/ic_home"
+                />
+            <TextView
+                android:textColor="#777777"
+                android:textSize="16sp"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtPr"
+
+            />
+            <TextView
+                android:textColor="#111111"
+                android:textSize="14sp"
+                android:layout_marginTop="3dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtLoCaiTon"
+
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

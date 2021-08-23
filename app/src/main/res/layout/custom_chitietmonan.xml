@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:padding="5dp"
+    >
+    <TextView
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:id="@+id/txtThanhtienMon"
+        android:layout_alignParentRight="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="30000"
+        android:textColor="#000000"
+        />
+    <ImageView
+        android:src="@drawable/delete1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgDelete"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/txtThanhtienMon"
+        />
+    
+    <TextView
+
+        android:textColor="#00FFFF"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:text="2x"
+        android:layout_marginLeft="10dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/txtSoLuongMonDat"
+        android:layout_marginTop="10dp"
+
+        />
+    <TextView
+        android:id="@+id/txtTenMonDat"
+        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginTop="5dp"
+        android:layout_toLeftOf="@+id/txtThanhtienMon"
+        android:layout_toRightOf="@+id/txtSoLuongMonDat"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Banh Canh Co 2"
+        />
+    <TextView
+        android:id="@+id/txtShowGhiChu"
+        android:layout_below="@+id/txtTenMonDat"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_toLeftOf="@+id/txtThanhtienMon"
+        android:layout_toRightOf="@+id/txtSoLuongMonDat"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+
+        />
+
+</RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

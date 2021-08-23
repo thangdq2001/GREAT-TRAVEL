@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:id="@+id/relTop"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       android:layout_alignParentTop="true"
+
+        android:background="#FFFFFF">
+
+        <TextView
+            android:textColor="	#444444"
+            android:id="@+id/txtFragmentDatDon"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Đặt đơn"
+             />
+
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:layout_width="20dp"
+            android:layout_height="5dp"
+            android:layout_below="@+id/txtFragmentDatDon"
+            android:layout_marginLeft="95dp"
+            android:layout_marginTop="5dp"
+            android:background="#FF0000" />
+
+        <TextView
+            android:textColor="#000000"
+            android:id="@+id/txtChuyenFragmentBinhLuan"
+            android:layout_width="wrap_content"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/txtFragmentDatDon"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Bình luận"
+             />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relTop"
+        android:layout_above="@+id/relBot"
+        android:padding="10dp"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recBinhLuan"
+            tools:listitem="@layout/custom_item_binhluan"
+            android:layout_marginBottom="3dp"
+
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:background="#EEEEEE"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/relBot"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+
+        >
+        <EditText
+            android:background="#EEEEEE"
+
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/edtPostBinhLuan"
+            android:layout_toLeftOf="@+id/imgPost"
+            android:layout_marginRight="5dp"
+            android:hint="Nhập bình luận của bạn"
+
+            />
+        <ImageView
+            android:background="#EEEEEE"
+            android:layout_marginBottom="50dp"
+            android:src="@drawable/icpost"
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:id="@+id/imgPost"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

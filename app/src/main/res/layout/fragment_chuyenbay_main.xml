@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView
+
+        android:background="#0033CC"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:id="@+id/iconBack"
+        android:src="@drawable/buttonback"
+        />
+<TextView
+    android:layout_marginLeft="0dp"
+    android:layout_toRightOf="@+id/iconBack"
+    android:textColor="#FFFFFF"
+    android:fontFamily="sans-serif-black"
+    android:textSize="24sp"
+    android:gravity="center"
+    android:textAlignment="center"
+    android:text="Chuyến bay + Khách Sạn"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:id="@+id/imgToolbar"
+    android:background="#0033CC"
+    />
+    <com.google.android.material.tabs.TabLayout
+        android:layout_below="@+id/iconBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tabChuyenBayMain"
+        />
+    <androidx.viewpager.widget.ViewPager
+        android:layout_below="@+id/tabChuyenBayMain"
+        android:id="@+id/view_pagrchuyenbay"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+</RelativeLayout>

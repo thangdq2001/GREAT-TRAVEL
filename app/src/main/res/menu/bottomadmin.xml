@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/botNhahan" android:title="Nhà hàng"
+    android:icon="@drawable/nhahang"
+    />
+    <item android:id="@+id/botKhacSan" android:title="Khách Sạn"
+        android:icon="@drawable/nhahang"
+        />
+    <item android:id="@+id/botChuyenBay" android:title="Chuyến Bay"
+        android:icon="@drawable/alens"
+        />
+    <item android:id="@+id/botXe" android:title="Gọi Xe"
+        android:icon="@drawable/car"
+        />
+    <item android:id="@+id/botShopping" android:title="Shopping"
+        android:icon="@drawable/shoping_car"
+        />
+
+</menu>

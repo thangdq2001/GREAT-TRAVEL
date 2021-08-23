@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <RelativeLayout
+        android:id="@+id/rcTop"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/igmTileCar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/car1" />
+
+        <ImageView
+            android:id="@+id/XeAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/addnhahang" />
+
+        <ImageView
+            android:id="@+id/XeUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/XeAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/updatedata" />
+
+        <ImageView
+            android:id="@+id/XeDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/XeUpdate"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtTiTleAdd"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/XeAdd"
+            android:layout_toRightOf="@+id/igmTileCar"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm Chuyến Xe"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTiTleAdd"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/XeUpdate"
+            android:layout_toRightOf="@+id/igmTileCar"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Đổi Thông Tin chuyến xe"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTiTleDeleTe"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTileUpdate"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/XeDelete"
+            android:layout_toRightOf="@+id/igmTileCar"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Xóa Chuyến Xe"
+            android:textAlignment="center"
+
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rcTop"
+        android:id="@+id/rcBot"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_margin="5dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/imgTileHistoryXe"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/historychuyenbay" />
+
+        <ImageView
+            android:id="@+id/XeHsAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/ic_baseline_add_24" />
+
+        <ImageView
+            android:id="@+id/XeHsUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/XeHsAdd"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/updatedata" />
+
+        <ImageView
+            android:id="@+id/XeHsDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/XeHsUpdate"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/delete1" />
+
+        <TextView
+            android:id="@+id/txtTiTleAddM"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/XeHsAdd"
+            android:layout_toRightOf="@+id/imgTileHistoryXe"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thêm Xe Vào Lịch Sữ"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTileUpdateM"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTiTleAddM"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/XeHsUpdate"
+            android:layout_toRightOf="@+id/imgTileHistoryXe"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Thay đổi Lịch Sữ"
+            android:textAlignment="center"
+
+            />
+
+        <TextView
+            android:id="@+id/txtTiTleDeleTeM"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/txtTileUpdateM"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/XeHsDelete"
+            android:layout_toRightOf="@+id/imgTileHistoryXe"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Xóa Lịch Sữ"
+            android:textAlignment="center"
+
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

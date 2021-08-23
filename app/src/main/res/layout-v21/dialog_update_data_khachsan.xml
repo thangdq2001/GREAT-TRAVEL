@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:text="Đổi thông tin khách sạn"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTile"
+      android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="10dp"
+
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txtTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt1"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Khu Vực "
+        />
+
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt3"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Lat"
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt4"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Log"
+        />
+    <TextView
+        android:layout_margin="15dp"
+        android:layout_below="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt5"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="18sp"
+        android:text="Name"
+        />
+    <EditText
+        android:layout_below="@+id/txtTile"
+        android:hint="Khu Vuc"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtUpdateKhuVucKhachSan"
+
+        />
+
+    <EditText
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateKhuVucKhachSan"
+        android:id="@+id/edtUpdateLatKhachSan"
+        android:hint="Lat"
+        />
+    <EditText
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateLatKhachSan"
+        android:id="@+id/edtUpdateLogKhachSan"
+        android:hint="Log"
+        />
+    <EditText
+
+        android:gravity="center"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@+id/txt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateLogKhachSan"
+        android:id="@+id/edtUpdateNameKhachSan"
+        android:hint="Name"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCanelDiaLogUpdateKhachSan"
+        android:layout_below="@+id/edtUpdateNameKhachSan"
+        android:layout_alignParentLeft="true"
+        android:text="Cancel"
+        android:layout_marginTop="5dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdateDiaLogKhachSan"
+        android:layout_below="@+id/edtUpdateNameKhachSan"
+        android:layout_alignParentRight="true"
+        android:text="Update"
+        android:layout_marginTop="5dp"
+
+        />
+</RelativeLayout>

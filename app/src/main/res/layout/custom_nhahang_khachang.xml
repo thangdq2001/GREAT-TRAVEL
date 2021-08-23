@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp">
+
+<androidx.cardview.widget.CardView
+    android:id="@+id/cardViewMonAn"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:padding="5dp"
+        >
+        <ImageView
+           android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:layout_height="135dp"
+            android:src="@drawable/nhahang1"
+            android:id="@+id/imgLogoNhaHang"
+
+            />
+        <ImageView
+            android:layout_margin="5dp"
+            android:id="@+id/iconFun"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:src="@drawable/fun1"
+            android:layout_toRightOf="@+id/imgLogoNhaHang"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/txtNameNhaHangKhachHang"
+            android:layout_toRightOf="@+id/iconFun"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="20sp"
+            android:text="Tên Nhà Hàng"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:layout_margin="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:id="@+id/txtNhomNhaHangKhachHang"
+            android:layout_toRightOf="@+id/txtNameNhaHangKhachHang"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:text="Nhom Nha hang"
+            />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/imgsao1"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/txtNameNhaHangKhachHang"
+            android:layout_toRightOf="@+id/imgLogoNhaHang"
+            android:src="@drawable/sao_danhgia"
+            android:layout_marginLeft="10dp"
+
+            />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/imgsao2"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/txtNameNhaHangKhachHang"
+            android:layout_toRightOf="@+id/imgsao1"
+            android:src="@drawable/sao_danhgia"
+            />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/imgsao3"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/txtNameNhaHangKhachHang"
+            android:layout_toRightOf="@+id/imgsao2"
+            android:src="@drawable/sao_danhgia"
+            />
+        <ImageView
+            android:layout_marginTop="5dp"
+            android:id="@+id/imgsao4"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_below="@+id/txtNameNhaHangKhachHang"
+            android:layout_toRightOf="@+id/imgsao3"
+            android:src="@drawable/sao_danhgia"
+            />
+        <TextView
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtKhoangCach"
+            android:layout_below="@+id/imgsao1"
+            android:layout_toRightOf="@+id/imgLogoNhaHang"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="16sp"
+            android:textColor="#AAAAAA"
+            android:layout_margin="10dp"
+            android:hint="0.3km"
+            />
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

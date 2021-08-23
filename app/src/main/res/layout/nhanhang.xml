@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:src="@drawable/backthuexe" />
+
+            <TextView
+                android:id="@+id/txtTille"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_toLeftOf="@+id/txtTrangthai"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Trạng thái đơn hàng:"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtTrangthai"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="50dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Chờ xác nhận"
+                android:textAlignment="center"
+                android:textColor="#0000FF"
+                android:textSize="20sp"
+
+                />
+
+            <ImageView
+                android:id="@+id/imgXe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTille"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/iconship" />
+
+            <ImageView
+                android:id="@+id/imgnext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTille"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/imgXe"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imgnext2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTille"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/imgnext1"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imgnext3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTille"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/imgnext2"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/imgnext4"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTille"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/imgnext3"
+                android:src="@drawable/next2" />
+
+            <ImageView
+                android:id="@+id/iconpeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTille"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="50dp"
+                android:layout_toRightOf="@+id/imgnext4"
+                android:src="@drawable/nhanhang" />
+
+            <TextView
+                android:id="@+id/txtTile1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iconpeople"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Thời gian nhận hàng"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/txtThoiGianShip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iconpeople"
+                android:layout_margin="20dp"
+                android:layout_toRightOf="@+id/txtTile1"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btnDaNhanHang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txtThoiGianShip"
+                android:layout_margin="20dp"
+                android:background="#FFFF00"
+                android:text="Đả nhận hàng" />
+
+            <Button
+                android:id="@+id/btnHuydonhang"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btnDaNhanHang"
+                android:layout_margin="20dp"
+                android:background="#FF0000"
+                android:text="Hủy đơn hàng" />
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    >
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemrvcacloaiphong"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:id="@+id/itemkhachsan"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgbed"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/phong" />
+
+            <TextView
+                android:id="@+id/txtLoaiPhong"
+                android:layout_width="270dp"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/imgbed"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Loại:Phòng vip"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <Button
+                android:id="@+id/btnchonphong"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_toRightOf="@+id/txtLoaiPhong"
+                android:background="#3333FF"
+                android:text="Chọn phòng"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btnxemphong"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/btnchonphong"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/txtLoaiPhong"
+                android:background="#3333FF"
+                android:text="Xem phòng"
+                android:textColor="#ffffff"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/imggia"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/imgbed"
+                android:src="@drawable/gia" />
+
+            <TextView
+                android:id="@+id/txtGiaPhong"
+                android:layout_width="270dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/txtLoaiPhong"
+                android:layout_toRightOf="@+id/imggia"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Giá:250000Đ"
+                android:textAlignment="center"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtgiamgia"
+                android:layout_width="270dp"
+                android:layout_height="20dp"
+                android:layout_below="@id/txtGiaPhong"
+                android:layout_toRightOf="@+id/imggia"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Máy lạnh+Giường đôi+Nước nóng"
+                android:textAlignment="center"
+                android:textColor="#3333FF"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

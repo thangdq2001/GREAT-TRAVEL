@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Time to travel</string>
+    <string name="tab1">Danh sách yêu thích</string>
+    <string name="tab2">Lịch sử</string>
+    <string name="chuyenbaytab1">Một chiều</string>
+    <string name="chuyenbaytab2">Khứ hồi</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

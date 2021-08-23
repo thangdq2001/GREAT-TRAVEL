@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CCCCCC">
+
+
+    <RelativeLayout
+        android:id="@+id/recTop"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imgBackFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/backthuexe" />
+
+        <TextView
+            android:id="@+id/txtNameNhaHang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgBackFragment"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Comw Tom Avc"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtKhoangCachGiao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtNameNhaHang"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Cach vi tri cua ban 20m"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/txtTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recTop"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Giao tới"
+        android:textColor="#EEEEEE"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/recBody"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/txtTile"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imgIconViTri"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/locaiton" />
+
+        <TextView
+            android:id="@+id/txtDiaChiKhachHang"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imgIconViTri"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:text="Toa Nha Innovation buiding"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/txtDiaChiKhachHang"
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@+id/imgIconViTri"
+            android:background="#C0C0C0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="Sữa"
+                android:textAlignment="center"
+                android:textColor="#33FFCC" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:padding="5dp"
+                android:text="Thay đổi địa chỉ, thêm ghi chú địac chỉ cho tài xế"
+                android:textSize="10sp"
+
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recBody2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recBody">
+
+        <TextView
+            android:id="@+id/txtTileChiTiet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="Chi tiết đơn hàng"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_above="@+id/recBottom"
+        android:layout_below="@+id/recBody2">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:background="#CCCCCC"
+            android:id="@+id/rcThanhToanDonhang"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            tools:listitem="@layout/custom_chitietmonan" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:id="@+id/recBottom"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+       android:layout_above="@+id/btnTienHanhThanhToan"
+        android:background="#FFFFFF">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_margin="5dp"
+            android:layout_toLeftOf="@+id/txtTongTien"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:padding="5dp"
+            android:text="Tổng Tiền: "
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTongTien"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+    <Button
+        android:background="@drawable/customdatxehengi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="55dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/btnTienHanhThanhToan"
+        android:text="Tiến Hành Thanh toán"
+        />
+
+</RelativeLayout>

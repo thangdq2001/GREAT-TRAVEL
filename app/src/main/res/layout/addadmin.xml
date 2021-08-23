@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UserName"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="14sp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAddUserNameAdMin"
+        android:layout_toRightOf="@+id/txt1"
+        android:hint="username"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txt2"
+        android:layout_below="@+id/txt1"
+        android:text="Password"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_margin="10dp"
+        android:textSize="14sp"
+
+        />
+    <EditText
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtAddPassAdMin"
+        android:layout_below="@+id/edtAddUserNameAdMin"
+        android:layout_toRightOf="@+id/txt1"
+        android:hint="Password"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCanceldialogAdmin"
+        android:text="cancel"
+        android:layout_below="@+id/edtAddPassAdMin"
+
+        />
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddDataDialogAdmin"
+        android:text="add data"
+        android:layout_below="@+id/edtAddPassAdMin"
+
+        />
+
+</RelativeLayout>

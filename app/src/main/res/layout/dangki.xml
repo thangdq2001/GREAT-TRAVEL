@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Name"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtName"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Name" />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/txtMail"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtName"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Mail"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtUserName"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Password"
+
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/txtTiileDiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtMail"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Đia Chỉ"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtDiaChi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtMail"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtUserName"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Password"
+
+        />
+
+    <TextView
+        android:layout_margin="10dp"
+        android:id="@+id/txtTileSdt"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtTiileDiaChi"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Sdt"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edtSdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTiileDiaChi"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtUserName"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Password"
+
+        />
+
+    <TextView
+        android:id="@+id/txtUserName"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtTileSdt"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="UserName"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSdt"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtUserName"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Username" />
+
+    <EditText
+        android:id="@+id/edtPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUser"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtPassWord"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Password"
+
+        />
+
+    <TextView
+        android:id="@+id/txtPassWord"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtUserName"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="PassWord"
+        android:textSize="20sp"
+
+        />
+
+    <EditText
+        android:id="@+id/edtNhaplaiPassWord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPassWord"
+        android:layout_margin="10dp"
+        android:layout_toRightOf="@+id/txtNhaplaiPassWord"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Nhap lai pass" />
+
+    <TextView
+        android:id="@+id/txtNhaplaiPassWord"
+        android:layout_width="85dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/txtPassWord"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Nhập lại"
+        android:textSize="20sp"
+
+        />
+    <Button
+        android:text="cancel"
+        android:layout_below="@+id/edtNhaplaiPassWord"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCanCelDiaLogDanKi"
+        />
+    <Button
+        android:id="@+id/btnAddDataUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtNhaplaiPassWord"
+        android:layout_alignParentRight="true"
+        android:text="Hoàn Thành" />
+
+</RelativeLayout>

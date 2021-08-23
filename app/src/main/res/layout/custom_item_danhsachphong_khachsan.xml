@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    >
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="120dp"
+            android:padding="10dp"
+            >
+            <ImageView
+                android:layout_alignParentRight="true"
+                android:src="@drawable/updatedata"
+                android:layout_alignParentTop="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/imgUpdatePhongKhachSan"
+                />
+            <TextView
+                android:hint="Tên Phòng"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtNamePhongKhachSan"
+                android:layout_toLeftOf="@+id/imgUpdatePhongKhachSan"
+                />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/imgDeletePhongKhachSan"
+                android:layout_below="@+id/imgUpdatePhongKhachSan"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/delete1"
+
+                />
+            <TextView
+                android:hint="Id phong"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtSoLuongPhong"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textAlignment="center"
+                android:layout_below="@id/txtNamePhongKhachSan"
+                android:layout_toLeftOf="@+id/imgDeletePhongKhachSan"
+                />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#DDDDDD"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginAcivity">
+
+    <ImageView
+        android:background="#FFFFFF"
+        android:id="@+id/imglogo"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logonew"
+
+        />
+
+    <EditText
+        android:padding="5dp"
+        android:background="#EEEEEE"
+        android:id="@+id/edtUsernameDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imglogo"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="10dp"
+        android:hint="Username"
+        android:textSize="18sp"
+
+        />
+
+    <EditText
+        android:padding="5dp"
+        android:background="#EEEEEE"
+        android:id="@+id/edtPasswordDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/edtUsernameDangNhap"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp"
+        android:hint="Password"
+        android:inputType="textPassword" />
+
+    <Button
+        android:textColor="#00CC00"
+        android:id="@+id/btnDangNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtPasswordDangNhap"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/customdatxehengi"
+        android:text="Đăng Nhập" />
+
+    <Button
+        android:textColor="	#00CC00"
+        android:id="@+id/btnDangNhapAdmin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDangNhap"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/customdatxehengi"
+        android:text="Đăng Nhập Với ADmin" />
+    <Button
+        android:textColor="	#00CC00"
+        android:id="@+id/btnDangKi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnDangNhapAdmin"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/customdatxehengi"
+        android:text="Đăng Kí" />
+
+
+</RelativeLayout>

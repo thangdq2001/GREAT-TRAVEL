@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+    <TextView
+        android:id="@+id/txtTileNameKhachSan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Mã chuyến bay"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtUpdateMaChuyenBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Mã Chuyến bay"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTileNameKhachSan"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Thời gian bay"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtUpdateThoiGianBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateMaChuyenBay"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Thời gian bay"
+        android:textSize="18sp" />
+
+
+    <TextView
+        android:id="@+id/txtTile1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Thời gian đến"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtUpdateThoiGianDen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateThoiGianBay"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Thời gian đến"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile1"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Điểm bắt đầu"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtUpdateDiemBatDau"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateThoiGianDen"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Điểm bắt đầu"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile2"
+
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Điểm kết thúc"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtUpdateDiemKetThuc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateDiemBatDau"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Điểm kết thúc"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTile4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile3"
+
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Giá vé"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtUpdateGiaVe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateDiemKetThuc"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Giá Vé "
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edtUpdateSanBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateGiaVe"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Sân Bay"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edtUpdateHangBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateSanBay"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Hãng Bay"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edtUpdateThoiLuongBay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateHangBay"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Thời lượng bay"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edtUpdateThue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateThoiLuongBay"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Thuế"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edtUpdatePhi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateThue"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Phí"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/edtUpdateTongTien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdatePhi"
+        android:layout_toRightOf="@+id/txtTileNameKhachSan"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:hint="Tổng tiền"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTiTile5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTile4"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Sân bay"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTiTile6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTiTile5"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Hãng bay"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTiTile7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTiTile6"
+        android:layout_margin="10dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Thời lượng bay"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTiTile8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTiTile7"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Thuế "
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTiTile9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTiTile8"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Phí"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtTiTile10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTiTile9"
+        android:layout_margin="10dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="Tổng tiền"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnCancelDialogUpdateChuyenBay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateTongTien"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="5dp"
+        android:text="Cancel"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnAddDataDialogChuyenbay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtUpdateTongTien"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:text="Add Data"
+        android:textSize="24sp" />
+
+</RelativeLayout>

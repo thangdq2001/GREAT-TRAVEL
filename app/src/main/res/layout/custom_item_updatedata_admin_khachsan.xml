@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/itemViewItemUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+        <RelativeLayout
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:id="@+id/recItemUpdateAdmin"
+            >
+           <ImageView
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:id="@+id/img_item_update_khachsan"
+               android:src="@drawable/updatedata"
+               android:layout_alignParentRight="true"
+               android:layout_alignParentTop="true"
+               />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/imgDeleKhachSan"
+                android:src="@drawable/delete1"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/img_item_update_khachsan"
+
+                />
+            <TextView
+            android:hint="Name"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtNameKhachSan_UpdateItem"
+                android:layout_toLeftOf="@+id/img_item_update_khachsan"
+                android:layout_marginRight="5dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                />
+            <TextView
+                android:layout_toLeftOf="@+id/img_item_update_khachsan"
+                android:layout_below="@id/txtNameKhachSan_UpdateItem"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:hint="Id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtIdKhachSan_UpdateItem"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/txtTileXemChiTietKhachSan"
+                android:layout_below="@id/txtIdKhachSan_UpdateItem"
+                android:text="Bấm xem chi tiết khách sạn"
+                android:textSize="24sp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:layout_toLeftOf="@id/imgAddPhongKhachSan"
+                />
+            <ImageView
+                android:src="@drawable/ic_baseline_add_24"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:id="@+id/imgAddPhongKhachSan"
+                android:layout_below="@id/imgDeleKhachSan"
+                android:layout_alignParentRight="true"
+                />
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:background="@drawable/logo6">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true">
+
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Xem chúng tôi có ưu đãi gì mới hôm nay"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp" />
+
+
+    </RelativeLayout>
+
+
+    <ScrollView
+
+        android:id="@+id/srollVIew"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_below="@+id/header">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="3"
+            android:columnOrderPreserved="false"
+            android:rowCount="3">
+            <!-- khach san-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewKhachSan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="3"
+                android:layout_columnWeight="2"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFCC"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/nha_hang" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Khách Sạn"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <!-- chuyen bay + khach san -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewChuyenBay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="3"
+                android:layout_columnWeight="2"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#FFFFCC"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/alens" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Chuyến bay+"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:text="Khách sạn"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- chuyen bay -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="3"
+                android:layout_columnWeight="2"
+                android:layout_margin="6dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFCC"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:id="@+id/imgOpenFood"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/foood" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Nhà hàng"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <!-- Chuyến Xe-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewChuyenXe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="3"
+                android:layout_columnWeight="2"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="20dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFCC"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/car" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Đặt xe"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <!-- Hoạt động -->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewHoatDong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="8dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFCC"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/hoat_dong" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Hoạt Động"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Lân Cận"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewShopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_rowWeight="3"
+                android:layout_columnWeight="2"
+                android:layout_margin="8dp"
+                android:layout_marginRight="20dp"
+                app:cardCornerRadius="12dp"
+                app:cardElevation="6dp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#FFFFCC"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="1dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/shoping_car" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Shopping"
+                        android:textColor="#000000"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </GridLayout>
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/slideshow"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_below="@+id/srollVIew"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/custom_slide_show_in_main"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/txtTiTleThongTinTieuBieu"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Thông tin tiêu biểu"
+            android:textSize="18sp" />
+
+        <ViewFlipper
+
+            android:id="@+id/slideShow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTiTleThongTinTieuBieu"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/logo1" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/slideshow"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+       <TextView
+           android:textSize="18sp"
+           android:layout_marginRight="10dp"
+           android:textColor="#660000"
+           android:layout_marginLeft="10dp"
+           android:text="Ưu Đãi Ăn Uống"
+           android:fontFamily="sans-serif-condensed-medium"
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:id="@+id/txtTileANUong"
+           />
+        <ImageView
+            android:id="@+id/imgUudainh1"
+            android:src="@drawable/trungnguyen"
+            android:layout_marginLeft="10dp"
+
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtTileANUong"
+            />
+        <ImageView
+            android:id="@+id/imgUudainh2"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/highlans"
+            android:layout_marginRight="10dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtTileANUong"
+            />
+        <TextView
+            android:id="@+id/txtTileKhachSan"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:textColor="#0000FF"
+            android:layout_marginLeft="10dp"
+            android:text="Khách Sạn Mới"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imgUudainh1"
+            />
+        <ImageView
+            android:id="@+id/imgKsUd1"
+            android:src="@drawable/kingshothel"
+            android:layout_marginLeft="10dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtTileKhachSan"
+            />
+        <ImageView
+            android:id="@+id/imgKsUd2"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/muonthanh1"
+            android:layout_marginRight="10dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtTileKhachSan"
+            />
+        <TextView
+            android:id="@+id/txtTileCb"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:textColor="#001100"
+            android:layout_marginLeft="10dp"
+            android:text="Hãng Bay Ưu Đãi"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imgKsUd2"
+            />
+        <ImageView
+            android:id="@+id/imgCbUd1"
+            android:src="@drawable/bambobay"
+            android:layout_marginLeft="10dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtTileCb"
+            />
+        <ImageView
+            android:id="@+id/imgCbud2"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/vietjet"
+            android:layout_marginRight="10dp"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_below="@+id/txtTileCb"
+            />
+
+    </RelativeLayout>
+</RelativeLayout>
+</androidx.core.widget.NestedScrollView>

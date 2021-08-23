@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/relativeTop"
+            android:layout_width="match_parent"
+            android:layout_height="125dp"
+            android:padding="5dp">
+
+            <TextView
+                android:id="@+id/txtShowGioBay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="30dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="16:30"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:id="@+id/imgNhap"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/txtShowGioBay"
+                android:src="@drawable/baydenvector" />
+
+            <TextView
+                android:id="@+id/txtShowGioDen"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@+id/imgNhap"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="17:00"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtShowThoiLuongBay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/txtShowGioDen"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="2h10m"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/txtShowMaChuyenBay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txtShowGioBay"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="VJ97"
+                android:textAlignment="center"
+                android:textSize="26sp" />
+
+            <TextView
+                android:id="@+id/txtShowGiaVe"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txtShowGioBay"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_toLeftOf="@+id/btnChonChuyenBay"
+                android:layout_toRightOf="@+id/txtShowMaChuyenBay"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="399,000 VND"
+                android:textAlignment="center"
+                android:textColor="#6633FF"
+                android:textSize="26sp" />
+            <ImageView
+                android:id="@+id/imgUpdateDataDialogChuyenBay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/updatedata"
+                />
+
+            <ImageView
+                android:id="@+id/imgDeleteChuyenBay"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@+id/txtShowGioBay"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/delete1" />
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

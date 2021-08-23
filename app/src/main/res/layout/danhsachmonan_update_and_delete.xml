@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp">
+   <TextView
+       android:layout_margin="5dp"
+       android:textSize="24sp"
+       android:fontFamily="sans-serif-condensed-medium"
+       android:gravity="center"
+       android:textAlignment="center"
+       android:id="@+id/txtNhap"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+      android:text="Danh Sách Món Ăn"
+
+      />
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/rcDanhSachMonAn"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:layout_below="@+id/txtNhap"
+        />
+
+</RelativeLayout>

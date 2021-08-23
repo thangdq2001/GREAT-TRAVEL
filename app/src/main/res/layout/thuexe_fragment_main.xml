@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+
+        android:id="@+id/recHeader"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/imgbacktoMainFragment"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/backthuexe" />
+
+        <TextView
+            android:id="@+id/txtGoiXe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/imgbacktoMainFragment"
+            android:background="@drawable/custom_name_goixe"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Gọi xe"
+            android:textColor="#00FF00"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtThueXe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/txtGoiXe"
+            android:background="@drawable/custom_name_goixe"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:text="Thuê xe"
+            android:textColor="#00FF00"
+            android:textSize="24sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/recBody"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@+id/recHeader"
+        android:background="#FF2">
+        <!-- maps fragment -->
+        <fragment
+            android:id="@+id/maps_goixe"
+            class="com.google.android.gms.maps.MapFragment"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/recBody"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/customoderxe"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtDatNgay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_margin="5dp"
+            android:background="@drawable/customdatxehengi"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Đặt ngay"
+            android:textColor="#00FF00"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txtHenGio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_toRightOf="@+id/txtDatNgay"
+            android:background="@drawable/customdatxehengi"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Hẹn Giờ"
+            android:textColor="#00FF00"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/edtDiaDiemDen"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/txtDatNgay"
+            android:layout_margin="10dp"
+            android:background="@drawable/iconviitri1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:gravity="center"
+            android:hint="Đến Đâu?"
+            android:textAlignment="center"
+            android:textSize="28sp" />
+
+        <RelativeLayout
+            android:id="@+id/rcHistryDiaDiem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/edtDiaDiemDen"
+            android:layout_marginTop="10dp">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rycviewHistroy"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+</RelativeLayout>

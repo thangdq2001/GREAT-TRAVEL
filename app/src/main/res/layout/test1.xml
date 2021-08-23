@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitleNameKok"
+        android:text="Ten kok"
+        />
+<EditText
+    android:textSize="18sp"
+    android:layout_toRightOf="@+id/txtTitleNameKok"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/tenkok"
+    android:hint="Ten quan Kok"
+    />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTitleNamePhongVip"
+        android:text="Phong Vip"
+        android:layout_below="@+id/txtTitleNameKok"
+        />
+    <EditText
+        android:layout_below="@+id/tenkok"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/txtTitleNamePhongVip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phongVip"
+        android:hint="Phong Vip"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtTiTleNamePhongThuong"
+        android:text="Phong Thuong"
+        android:layout_below="@+id/txtTitleNamePhongVip"
+        />
+    <EditText
+        android:layout_below="@+id/phongVip"
+        android:textSize="18sp"
+        android:layout_toRightOf="@+id/txtTitleNamePhongVip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/phongThuong"
+        android:hint="Phong Thuong"
+        />
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtNamePhongSinhVien"
+        android:text="Phong Sinh Vien"
+        android:layout_below="@+id/txtTiTleNamePhongThuong"
+        />
+
+    <EditText
+        android:id="@+id/phongSinhVien"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phongThuong"
+        android:layout_marginLeft="-22dp"
+        android:layout_marginTop="0dp"
+        android:layout_toRightOf="@+id/txtNamePhongSinhVien"
+        android:hint="Phong Sinh Vien"
+        android:textSize="18sp" />
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click me"
+        android:layout_below="@+id/phongSinhVien"
+        android:id="@+id/btnClick"
+        />
+        />
+</RelativeLayout>
